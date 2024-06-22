@@ -1,8 +1,16 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 :root {
+  --primary-blue: rgba(37, 18, 255);
+  --primary-purple: rgba(120, 0, 215);
   --primary-gradient: linear-gradient(
     to bottom right,
     rgba(37, 18, 255, 1),
     rgb(120, 0, 215, 1)
+  );
+  --secondary-gradient: linear-gradient(
+    to bottom right,
+    rgba(37, 18, 255, 0.25),
+    rgb(120, 0, 215, 0.25)
   );
   --primary-text: #fff;
   --secondary-text: #000;
@@ -22,6 +30,7 @@ body {
 }
 html {
   font-size: 62.5%;
+  font-family: "Montserrat", sans-serif;
 }
 
 .container {
