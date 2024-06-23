@@ -1,0 +1,116 @@
+.projects-section {
+  background: var(--primary-gradient);
+}
+.featured-projects {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(3, 1fr);
+}
+.sm-circle-bottom-card {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  background: var(--secondary-gradient);
+  z-index: 999;
+  height: 15rem;
+  width: 15rem;
+  border-radius: 50%;
+}
+.sm-circle-top-card {
+  height: 15rem;
+  width: 15rem;
+  border-radius: 50%;
+  position: absolute;
+  top: 15%;
+  left: 10%;
+  background: var(--secondary-gradient);
+  z-index: 999;
+}
+.project__wrapper {
+  perspective: 150rem;
+  -moz-perspective: 150rem;
+  position: relative;
+  height: 50rem;
+}
+.card-heading {
+  font-size: 4.8rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  flex-direction: column;
+}
+.card__side {
+  height: 50rem;
+  transition: all 0.8s ease;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 5px;
+  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
+  width: 100%;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  overflow: hidden;
+}
+
+.card__side-front {
+  background-color: #fff;
+  height: 50rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.card__side-back {
+  transform: rotateY(180deg);
+  background-color: #fff;
+}
+
+.project__wrapper:hover > .card__side-front {
+  transform: rotateY(-180deg);
+}
+.project__wrapper:hover > .card__side-back {
+  transform: rotateY(0);
+}
+
+.card__image,
+.card__image img {
+  width: 100%;
+}
+.card__details {
+  padding: 3rem;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  gap: 5rem;
+  align-items: center;
+}
+.card__title > h4,
+.card__name {
+  font-size: 3.8em;
+}
+
+.card__description {
+  font-size: 2.4rem;
+  text-align: center;
+}
+
+.card__cta {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+.card__git {
+  background: var(--secondary-gradient);
+}
+.card__web {
+  background: var(--primary-gradient);
+}
+.card__btn {
+  padding: 1rem 2rem;
+  border-radius: 5rem;
+  font-size: 1.6rem;
+  transition: all 0.3s ease;
+}
