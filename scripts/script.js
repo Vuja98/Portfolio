@@ -4,7 +4,7 @@ const gitProfile = document.querySelector(".git__projects-wrapper");
 
 const API_URL = "https://api.github.com/users/";
 const gitUsername = "Vuja98";
-const token = "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";
+const token = "85736ca6df9dc6d5cefbb5518275734ef85a73fe";
 const url = `https://api.github.com/users/${gitUsername}/repos?sort=updated&per_page=6`;
 const body = document.body;
 const loaderEl = document.querySelector(".loader");
@@ -77,9 +77,9 @@ function removeActive() {
 async function getLatestRepos() {
   try {
     const response = await fetch(url, {
-      headers: {
-        Authorization: `Bearer ${token}`,
-      },
+      // headers: {
+      //   Authorization: `Bearer ${token}`,
+      // },
     });
     const data = await response.json();
 
