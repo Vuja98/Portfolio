@@ -1,5 +1,7 @@
 "use strict";
+
 const gitProfile = document.querySelector(".git__projects-wrapper");
+
 const API_URL = "https://api.github.com/users/";
 const gitUsername = "Vuja98";
 const token = "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";
