@@ -1,0 +1,12 @@
+.about-section {
+  background: var(--primary-gradient);
+  padding-bottom: 8rem;
+}
+
+.about__text-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 4rem;
+}

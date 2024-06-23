@@ -1,0 +1,88 @@
+/* Typography */
+.gradient-text {
+  background: var(--primary-gradient);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.white-text {
+  color: var(--primary-text);
+}
+.center {
+  text-align: center;
+}
+
+.heading {
+  font-size: 4.8rem;
+}
+
+.text {
+  font-size: 2.4rem;
+}
+
+/* Margins and paddings */
+
+.margin-sm {
+  margin: 2rem;
+}
+.margin-md {
+  margin: 4rem;
+}
+.margin-lg {
+  margin: 6rem;
+}
+
+.padding-sm {
+  padding: 2rem;
+}
+.padding-md {
+  padding: 4rem;
+}
+.padding-lg {
+  padding: 6rem;
+}
+
+.margin-bt {
+  margin-bottom: 4rem;
+}
+.padding-bt {
+  padding-bottom: 4rem;
+}
+/* Animations */
+
+.animate {
+  animation: float 7s ease-in-out infinite;
+}
+.animate-reverse {
+  animation: float-reverse 7s ease-in-out infinite;
+}
+@keyframes float-reverse {
+  0%,
+  100% {
+    transform: translateY(-5rem);
+
+    opacity: 0.1;
+  }
+
+  50% {
+    opacity: 0.25;
+    transform: translateY(2rem);
+  }
+}
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(2rem);
+
+    opacity: 0.1;
+  }
+
+  50% {
+    opacity: 0.25;
+    transform: translateY(-5rem);
+  }
+}
+
+.bold {
+  font-weight: 700;
+}
