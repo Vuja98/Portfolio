@@ -1,5 +1,6 @@
 .projects-section {
   background: var(--primary-gradient);
+  padding: 10rem;
 }
 .featured-projects {
   display: grid;
@@ -113,4 +114,58 @@
   border-radius: 5rem;
   font-size: 1.6rem;
   transition: all 0.3s ease;
+}
+
+.git__projects-wrapper {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  align-items: center;
+  justify-content: center;
+}
+.project {
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 3rem;
+}
+.project-name {
+  font-size: 2rem;
+  padding: 4rem;
+  text-align: center;
+}
+
+.git-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+.git-link {
+  background: var(--secondary-gradient);
+  padding: 1rem 2rem;
+  border-radius: 5rem;
+  font-size: 1.6rem;
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.15);
+  transition: all 0.3s ease;
+}
+.live-link {
+  background: var(--primary-gradient);
+  color: var(--primary-text);
+  padding: 1rem 2rem;
+  border-radius: 5rem;
+  font-size: 1.6rem;
+  transition: all 0.3s ease;
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.15);
+}
+
+.git-link:hover,
+.live-link:hover {
+  transform: translateY(-5px);
+  box-shadow: 1px 4px 4px rgba(0, 0, 0, 0.15);
 }

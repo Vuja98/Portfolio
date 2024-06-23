@@ -4,26 +4,44 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles/style.css" />
+    <script defer src="scripts/script.js"></script>
     <title>Dejan V.</title>
   </head>
   <body>
+    <div class="loader">
+      <div class="lds-roller">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+    </div>
     <header class="header">
       <div class="container">
         <nav class="nav">
           <div class="nav__logo">
-            <h2 class="nav__logo-text gradient-text"><a href="#hero"> Dejan V.</h2></a>
+            <h2 class="nav__logo-text gradient-text"><a href="#" class="refresh">Dejan V.</h2></a>
           </div>
           <ul class="nav__items">
             <li class="nav__item">
               <a href="#about" class="nav__item-link">Аbout me</a>
             </li>
             <li class="nav__item">
-              <a href="#" class="nav__item-link">Skills</a>
+              <a href="#skills" class="nav__item-link">Skills</a>
             </li>
             <li class="nav__item">
-              <a href="#" class="nav__item-link">Projects</a>
+              <a href="#projects" class="nav__item-link">Projects</a>
             </li>
           </ul>
+          <div class="burger">
+            <span class="burger_bar"></span>
+            <span class="burger_bar"></span>
+            <span class="burger_bar"></span>
+          </div>
           <div class="nav__cta"><h3 class="nav__cta-text">Let's chat</h3></div>
         </nav>
       </div>
@@ -36,7 +54,7 @@
         <div class="sm-circle-bottom animate"></div>
         <h1 class="hero__main-text">I will bring your <span class="highlight">ideas</span> and <span class="highlight">designs</span> to life</h1>
       <div class="hero__cta-wrapper">
-        <div class="hero__cta hero__cta-keep-reading"><h3 class="hero__keep-reading-text gradient-text"><a href="#">Keep Reading</a></h3></div>
+        <div class="hero__cta hero__cta-keep-reading"><h3 class="hero__keep-reading-text gradient-text"><a href="#about">Keep Reading</a></h3></div>
         <div class="hero__cta hero__cta-cv"><h3 class="hero__download-cv-text"><a href="https://drive.google.com/file/d/10qhYsDHABjwkrWbFkU17yZEc0tp5Wkdc/view?usp=drive_link" download="Dejan-Vujacic-CV" class="white-text" target="_blank">Download CV</a></h3></div>
       </div>
       </div>
@@ -94,7 +112,7 @@
       </div>
     </div>
   </section>
-  <section class="projects-section" id="skills">
+  <section class="projects-section" id="projects">
     <div class="container">
       <h3 class="projects__heading white-text center heading padding-lg">Featured projects</h3>
       <main class="featured-projects">
@@ -179,8 +197,9 @@
           </div>
         </div>
       </main>
-      <aside class="other-projects git" id="git">
-        <div class="projects__project-wrapper">TEST</div>
+      <aside class="git git--profile" id="git">
+       
+        <div class="git__projects-wrapper"></div>
       </aside>
     </div>
   </section>
@@ -195,6 +214,7 @@
         <li class="footer__list-item "><a href="#skills" class="footer__link gradient-text" >Skills</a></li>
         <li class="footer__list-item "><a href="#projects" class="footer__link gradient-text" >Projects</a></li>
       </ul>
+     
     </div>
     <div class="footer__socials">
       <a href="https://www.facebook.com/dejanvujacic98">
@@ -205,9 +225,9 @@
     </div>
   </div>
 </div>
+</footer>
 <div class="copyright">
-  Copyright &copy; <span class="year"></span>. All Rights Reserved.
+  Copyright &copy; <span id="year"></span>. All Rights Reserved.
 </div>
-  </footer>
   </body>
 </html>
