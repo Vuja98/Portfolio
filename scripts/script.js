@@ -4,7 +4,7 @@ const gitProfile = document.querySelector(".git__projects-wrapper");
 
 const API_URL = "https://api.github.com/users/";
 const gitUsername = "Vuja98";
-const token = "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";
+const token = "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";
 const url = `https://api.github.com/users/${gitUsername}/repos?sort=updated&per_page=6`;
 const body = document.body;
 const loaderEl = document.querySelector(".loader");
@@ -115,4 +115,4 @@ async function getLatestRepos() {
     console.error(error);
   }
 }
-getLatestRepos();
+const repose = getLatestRepos();
