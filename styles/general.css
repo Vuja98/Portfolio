@@ -37,3 +37,49 @@ html {
   max-width: 90%;
   margin: 0 auto;
 }
+.gradient-text {
+  background: var(--primary-gradient);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+a {
+  text-decoration: none;
+}
+
+.white-text {
+  color: var(--primary-text);
+}
+
+.animate {
+  animation: float 7s ease-in-out infinite;
+}
+.animate-reverse {
+  animation: float-reverse 7s ease-in-out infinite;
+}
+@keyframes float-reverse {
+  0%,
+  100% {
+    transform: translateY(-5rem);
+
+    opacity: 0.1;
+  }
+
+  50% {
+    opacity: 0.25;
+    transform: translateY(2rem);
+  }
+}
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(2rem);
+
+    opacity: 0.1;
+  }
+
+  50% {
+    opacity: 0.25;
+    transform: translateY(-5rem);
+  }
+}
