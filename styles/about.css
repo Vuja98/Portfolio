@@ -3,6 +3,7 @@
   padding: 8rem;
   z-index: 33;
   overflow: hidden;
+  margin-top: 0 !important;
 }
 
 .about__text-wrapper {

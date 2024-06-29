@@ -8,6 +8,8 @@ const overlay = document.getElementById("overlay");
 const modal = document.getElementById("modal");
 const modalWrapper = document.getElementById("modal-wrapper");
 const close = document.getElementById("close");
+const form = document.getElementById("form");
+const result = document.getElementById("result");
 const url = `https://api.github.com/users/${gitUsername}/repos?sort=updated&per_page=6`;
 const btn = document.getElementById("nav_btn");
 const body = document.body;
@@ -17,6 +19,7 @@ const yearEl = document.getElementById("year");
 const year = new Date().getFullYear();
 const navLinks = document.querySelectorAll(".nav__item-link");
 const navItems = document.querySelector(".nav_items");
+const cta = document.querySelector("#readMore");
 const git = document.querySelector("projects__project-wrapper");
 const burger = document.querySelector(".burger");
 
@@ -144,9 +147,6 @@ close.addEventListener("click", () => {
   overlay.classList.remove("activate");
   modal.classList.remove("active");
 });
-
-const form = document.getElementById("form");
-const result = document.getElementById("result");
 
 form.addEventListener("submit", function (e) {
   e.preventDefault();

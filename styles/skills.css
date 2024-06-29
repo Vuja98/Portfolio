@@ -1,7 +1,5 @@
 .skills-section {
   background: var(--primary-text);
-  /* margin-top: 6rem; */
-  padding: 2rem 4rem 8rem 4rem;
 }
 .skills-grid {
   display: grid;
@@ -17,7 +15,7 @@
   align-items: center;
   justify-content: center;
   text-align: center;
-  padding: 2rem 2rem;
+  padding: 3rem 3rem;
 
   border-radius: 5px;
   box-shadow: var(--box-shadow);
@@ -33,4 +31,16 @@
 }
 .skills_description {
   font-size: 2.4rem;
+}
+@media screen and (max-width: 1920px) {
+  .skills__grid-item {
+    padding: 3rem 3rem;
+  }
+
+  .skills__name {
+    font-size: 3.2rem;
+  }
+  .skills_description {
+    font-size: 2.2rem;
+  }
 }

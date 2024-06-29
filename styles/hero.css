@@ -1,16 +1,19 @@
 .hero-section {
-  height: 90vh;
-  margin-top: 8rem;
+  height: 100%;
+  margin-bottom: 0;
+}
+.hero__content {
   display: flex;
   justify-content: space-evenly;
-  gap: 4rem;
+
+  align-items: center;
 }
 .hero__left-col {
-  width: 30%;
+  width: 40%;
+  height: 100%;
   text-align: center;
   display: flex;
   flex-direction: column;
-  /* height: 80vh; */
   justify-content: center;
   align-items: center;
 }
@@ -53,6 +56,8 @@
 }
 
 .hero__right-col {
+  width: 50%;
+  height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -62,11 +67,11 @@
   position: absolute;
   top: 0;
   right: 0;
+  bottom: 0;
   background: var(--primary-gradient);
   opacity: 0.25;
-  height: 100%;
-  width: 27%;
-  z-index: 4;
+  width: 30%;
+  z-index: 1;
   backdrop-filter: blur(8px);
   -webkit-backdrop-filter: blur(8px);
   filter: blur(8px);
@@ -85,12 +90,13 @@
 }
 .hero__portfolio-image {
   z-index: 2;
-  margin-top: 15rem;
+}
+.hero__portfolio-img {
   height: 100%;
 }
 .sm-circle-top {
   position: absolute;
-  top: 40%;
+  top: 30%;
   left: 15%;
   height: 15rem;
   width: 15rem;
@@ -111,4 +117,21 @@
   opacity: 0.1;
   z-index: 1;
   filter: blur(2px);
+}
+@media screen and (max-width: 1920px) {
+  .hero__main-text {
+    font-size: 5.6rem;
+  }
+  .circle {
+    height: 45rem;
+    width: 45rem;
+  }
+
+  .sm-circle-top {
+    top: 20%;
+  }
+  .sm-circle-bottom {
+    top: 60%;
+    left: 30%;
+  }
 }
