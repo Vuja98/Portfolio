@@ -326,3 +326,28 @@ body {
     padding: 3rem 4rem;
   }
 }
+@media only screen and (max-width: 400px) {
+  .header {
+    padding: 2rem 3rem;
+  }
+  .burger {
+    justify-self: end;
+    display: block;
+    height: 3rem;
+    width: 3rem;
+    position: absolute;
+    top: 30%;
+    right: 10%;
+  }
+  .nav {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .nav__logo {
+    width: 100%;
+  }
+  .nav__logo-text {
+    font-size: 2rem;
+    width: 100%;
+  }
+}

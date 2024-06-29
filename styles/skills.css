@@ -80,3 +80,8 @@
     font-size: 1.8rem;
   }
 }
+@media only screen and (max-width: 720px) {
+  .skills-grid {
+    grid-template-columns: 1fr;
+  }
+}

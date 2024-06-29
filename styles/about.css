@@ -23,8 +23,6 @@
     padding: 2rem;
   }
   .about__heading {
-    margin-top: 4rem;
-    margin-bottom: 4rem !important;
     padding: 0;
   }
   .about__text {
@@ -38,5 +36,10 @@
     align-items: center;
     flex-direction: column;
     gap: 4rem;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .about__heading {
+    margin-bottom: 2rem;
   }
 }
