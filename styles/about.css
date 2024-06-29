@@ -1,7 +1,7 @@
 .about-section {
   background: var(--primary-gradient);
   padding: 8rem;
-  z-index: 33;
+  z-index: 100;
   overflow: hidden;
   margin-top: 0 !important;
 }
@@ -12,4 +12,31 @@
   align-items: center;
   flex-direction: column;
   gap: 4rem;
+}
+@media screen and (max-width: 1280px) {
+  .about-section {
+    padding: 8rem 0rem 8rem 0rem;
+  }
+}
+@media only screen and (max-width: 19em) {
+  .about-section {
+    padding: 2rem;
+  }
+  .about__heading {
+    margin-top: 4rem;
+    margin-bottom: 4rem !important;
+    padding: 0;
+  }
+  .about__text {
+    font-size: 1.2rem;
+    width: 100%;
+    text-align: center;
+  }
+  .about__text-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 4rem;
+  }
 }

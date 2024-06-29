@@ -44,3 +44,39 @@
     font-size: 2.2rem;
   }
 }
+@media screen and (max-width: 1440px) {
+  .skills-grid {
+    gap: 3rem;
+  }
+  .skills__grid-item {
+    padding: 2rem 2rem;
+  }
+  .skills__icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+  }
+  .skills__name {
+    font-size: 3.2rem;
+  }
+  .skills_description {
+    font-size: 2.2rem;
+  }
+}
+@media only screen and (max-width: 19em) {
+  .skills-section {
+    background: var(--primary-text);
+  }
+  .skills-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .skills__name {
+    font-size: 2.8rem;
+  }
+  .skills_description {
+    font-size: 1.8rem;
+  }
+}

@@ -8,7 +8,7 @@
   justify-content: center;
   align-items: center;
   height: 100vh;
-  transition: all 0.3s ease;
+  transition: all 0.6s ease;
 }
 .modal.active {
   display: flex;
@@ -41,14 +41,14 @@
   background-color: #fff;
   margin: 0 auto;
   box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.7);
-  transform: scale(0.6) rotateZ(-45deg);
-  transition: all 0.3s ease;
+  transform: scale(0.6) rotateZ(-10deg);
+  transition: all 0.6s ease;
   z-index: 9999;
 }
 
 .contact-modal.active {
   transform: scale(1) rotateZ(0deg);
-  transition: all 0.3s ease;
+  transition: all 0.6s ease;
 }
 .close-icon {
   cursor: pointer;
@@ -70,7 +70,7 @@
   color: #fff;
 }
 .contact-form {
-  padding: 3rem;
+  padding: 5rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -110,4 +110,10 @@
 }
 .result {
   font-size: 1.6rem;
+}
+@media screen and (max-width: 1920px) {
+  .contact-modal {
+    height: 60%;
+    width: 50%;
+  }
 }

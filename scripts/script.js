@@ -18,10 +18,25 @@ const roller = document.querySelector(".lds-roller");
 const yearEl = document.getElementById("year");
 const year = new Date().getFullYear();
 const navLinks = document.querySelectorAll(".nav__item-link");
-const navItems = document.querySelector(".nav_items");
+const navItems = document.querySelector(".nav__items");
 const cta = document.querySelector("#readMore");
 const git = document.querySelector("projects__project-wrapper");
 const burger = document.querySelector(".burger");
+burger.addEventListener("click", () => {
+  burger.classList.toggle("active");
+  navItems.classList.toggle("active");
+});
+
+burger.addEventListener("click", () => {
+  burger.classList.toggle("active");
+  navItems.classList.toggle("active");
+});
+navLinks.forEach((link) => {
+  link.addEventListener("click", () => {
+    burger.classList.remove("active");
+    navItems.classList.remove("active");
+  });
+});
 
 setTimeout(() => {
   loaderEl.style.opacity = 0;
@@ -133,17 +148,15 @@ btn.addEventListener("click", (e) => {
 });
 
 overlay.addEventListener("click", () => {
-  setTimeout(() => {
-    modalWrapper.classList.remove("active");
-  }, 100);
+  modalWrapper.classList.remove("active");
+
   overlay.classList.remove("activate");
   modal.classList.remove("active");
 });
 
 close.addEventListener("click", () => {
-  setTimeout(() => {
-    modalWrapper.classList.remove("active");
-  }, 100);
+  modalWrapper.classList.remove("active");
+
   overlay.classList.remove("activate");
   modal.classList.remove("active");
 });
@@ -168,12 +181,11 @@ form.addEventListener("submit", function (e) {
       if (response.status == 200) {
         result.innerHTML = json.message;
         setTimeout(() => {
-          setTimeout(() => {
-            modalWrapper.classList.remove("active");
-          }, 100);
+          modalWrapper.classList.remove("active");
+
           overlay.classList.remove("activate");
           modal.classList.remove("active");
-        }, 500);
+        }, 1000);
       } else {
         console.log(response);
         result.innerHTML = json.message;
