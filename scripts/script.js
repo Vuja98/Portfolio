@@ -4,8 +4,12 @@ const gitProfile = document.querySelector(".git__projects-wrapper");
 
 const API_URL = "https://api.github.com/users/";
 const gitUsername = "Vuja98";
-const token = "85736ca6df9dc6d5cefbb5518275734ef85a73fe";
+const overlay = document.getElementById("overlay");
+const modal = document.getElementById("modal");
+const modalWrapper = document.getElementById("modal-wrapper");
+const close = document.getElementById("close");
 const url = `https://api.github.com/users/${gitUsername}/repos?sort=updated&per_page=6`;
+const btn = document.getElementById("nav_btn");
 const body = document.body;
 const loaderEl = document.querySelector(".loader");
 const roller = document.querySelector(".lds-roller");
@@ -116,3 +120,27 @@ async function getLatestRepos() {
   }
 }
 const repose = getLatestRepos();
+
+btn.addEventListener("click", (e) => {
+  modalWrapper.classList.add("active");
+  setTimeout(() => {
+    overlay.classList.add("activate");
+    modal.classList.add("active");
+  }, 1);
+});
+
+overlay.addEventListener("click", () => {
+  setTimeout(() => {
+    modalWrapper.classList.remove("active");
+  }, 100);
+  overlay.classList.remove("activate");
+  modal.classList.remove("active");
+});
+
+close.addEventListener("click", () => {
+  setTimeout(() => {
+    modalWrapper.classList.remove("active");
+  }, 100);
+  overlay.classList.remove("activate");
+  modal.classList.remove("active");
+});

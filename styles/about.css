@@ -1,6 +1,6 @@
 .about-section {
   background: var(--primary-gradient);
-  padding-bottom: 8rem;
+  padding: 8rem;
   z-index: 33;
   overflow: hidden;
 }

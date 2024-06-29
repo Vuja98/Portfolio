@@ -4,10 +4,26 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles/style.css" />
-    <script defer src="scripts/script.js"></script>
+    <script  src="scripts/script.js" defer></script>
     <title>Dejan V.</title>
   </head>
   <body>
+    <div class="modal" id="modal-wrapper">
+    <div class="modal-overlay" id="overlay"></div>
+    <div class="contact-modal" id="modal">
+      <div class="modal-heading">
+        <h2 class="form-heading">Reach out</h2>
+        <div class="close-icon" id="close"><img src="images/close.png" alt="Close icon"></div>
+      </div>
+      <form class="contact-form" action="" method="post">
+        <input type="text" required placeholder="Your name" class="form__input">
+        <input type="text" required placeholder="Your last name" class="form__input">
+        <textarea name="" placeholder="Your message"  class="form__area"  id=""></textarea>
+        <button type="submit" class="form__btn">Send</button>
+      </form>
+    </div>
+  </div>
+
     <div class="loader">
       <div class="lds-roller">
         <div></div>
@@ -42,7 +58,7 @@
             <span class="burger_bar"></span>
             <span class="burger_bar"></span>
           </div>
-          <div class="nav__cta"><h3 class="nav__cta-text">Let's chat</h3></div>
+          <div class="nav__cta" id="nav_btn"><h3 class="nav__cta-text">Let's chat</h3></div>
         </nav>
       </div>
     </header>
