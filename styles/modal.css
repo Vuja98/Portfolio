@@ -52,6 +52,11 @@
 }
 .close-icon {
   cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 4rem;
+  height: 4rem;
 }
 .modal-heading {
   background: var(--primary-gradient);
@@ -102,4 +107,7 @@
   cursor: pointer;
   transform: translateY(-2px);
   box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.7);
+}
+.result {
+  font-size: 1.6rem;
 }

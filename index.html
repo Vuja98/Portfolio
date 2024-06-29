@@ -15,11 +15,15 @@
         <h2 class="form-heading">Reach out</h2>
         <div class="close-icon" id="close"><img src="images/close.png" alt="Close icon"></div>
       </div>
-      <form class="contact-form" action="" method="post">
-        <input type="text" required placeholder="Your name" class="form__input">
-        <input type="text" required placeholder="Your last name" class="form__input">
-        <textarea name="" placeholder="Your message"  class="form__area"  id=""></textarea>
-        <button type="submit" class="form__btn">Send</button>
+      <form class="contact-form" id="form" action="https://api.web3forms.com/submit" method="POST">
+        <input type="hidden" name="access_key" value="8e390316-679e-47d7-9a27-3fdf6febc46a">
+        <input type="text" name="name" required placeholder="Your name" class="form__input">
+        <input type="email" name="email" required placeholder="Your email" class="form__input">
+        <input class="form__input" placeholder="Subject" type="text" name="subject" />
+        <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+        <textarea name="message" placeholder="Your message"  class="form__area"  id=""></textarea>
+        <button type="submit"  class="form__btn">Send</button>
+        <div id="result" class="result"></div>
       </form>
     </div>
   </div>
