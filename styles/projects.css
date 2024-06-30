@@ -172,7 +172,7 @@
   transform: translateY(-5px);
   box-shadow: 1px 4px 4px rgba(0, 0, 0, 0.15);
 }
-@media screen and (max-width: 1920px) {
+@media screen and (max-width: 192em) {
   .git-link {
     background: var(--secondary-gradient);
     padding: 1rem 2rem;
@@ -197,7 +197,7 @@
     box-shadow: 1px 4px 4px rgba(0, 0, 0, 0.15);
   }
 }
-@media screen and (max-width: 1576px) {
+@media screen and (max-width: 157.6em) {
   .card__side-front {
     padding: 2rem;
   }
@@ -219,7 +219,7 @@
     padding: 2rem;
   }
 }
-@media screen and (max-width: 1440px) {
+@media screen and (max-width: 144em) {
   .projects-section {
     padding-left: 0;
     padding-right: 0;
@@ -339,12 +339,12 @@
     flex-direction: column;
   }
 }
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 72em) {
   .projects-section {
-    padding: 6rem;
+    padding: 4rem;
   }
   .featured-projects {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
   }
 
   .card__title > h4,
@@ -369,7 +369,7 @@
   }
 
   .project-name {
-    font-size: 3rem;
+    font-size: 2rem;
   }
 
   .git-links {
@@ -379,7 +379,7 @@
     gap: 2rem;
   }
 }
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 40em) {
   .projects-section {
     padding: 2rem;
   }
@@ -389,5 +389,58 @@
     border-radius: 5rem;
     font-size: 1.8rem;
     transition: all 0.3s ease;
+  }
+}
+@media only screen and (max-width: 56.25em) {
+  .git__projects-wrapper {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+  }
+  .project {
+    padding: 2rem;
+  }
+
+  .project-name {
+    padding: 3rem;
+  }
+
+  .git-links {
+    gap: 1rem;
+  }
+
+  .git-link {
+    padding: 1rem 2rem;
+  }
+  .live-link {
+    padding: 1rem 2rem;
+  }
+}
+@media screen and (max-width: 76.8em) {
+  .projects-section {
+    padding: 2rem;
+  }
+  .featured-projects {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .git__projects-wrapper {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media screen and (max-width: 42.5em) {
+  .projects-section {
+    padding: 1rem;
+  }
+  .featured-projects {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .git__projects-wrapper {
+    grid-template-columns: repeat(1, 1fr);
   }
 }

@@ -22,7 +22,7 @@
   left: 0;
   right: 0;
   opacity: 0;
-  z-index: 999;
+  z-index: 9999;
 }
 .modal-overlay.activate {
   display: block;
@@ -111,9 +111,48 @@
 .result {
   font-size: 1.6rem;
 }
-@media screen and (max-width: 1920px) {
+@media screen and (max-width: 192em) {
   .contact-modal {
     height: 60%;
     width: 50%;
+  }
+}
+@media screen and (max-width: 144em) {
+  .modal-overlay.activate {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .contact-modal {
+    position: fixed;
+    top: 20%;
+  }
+
+  .form__input {
+    font-size: 1.8rem;
+  }
+  .form__area {
+    font-size: 1.8rem;
+  }
+  .form__btn {
+    font-size: 1.8rem;
+  }
+}
+@media screen and (max-width: 42.5m) {
+  .contact-modal {
+    width: 80%;
+  }
+
+  .close-icon {
+    width: 3rem;
+    height: 3rem;
+  }
+
+  .contact-form {
+    padding: 2rem;
+  }
+
+  .result {
+    font-size: 1.6rem;
   }
 }
