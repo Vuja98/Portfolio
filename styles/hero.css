@@ -200,3 +200,27 @@
     width: 100%;
   }
 }
+@media screen and (max-width: 26.5625em) {
+  .hero__cta-wrapper {
+    flex-direction: column;
+    gap: 3rem;
+  }
+  .sm-circle-top {
+    display: none;
+    z-index: -1;
+  }
+  .sm-circle-bottom {
+    top: 20%;
+    left: 30%;
+  }
+  .hero__right-col {
+    width: 100%;
+  }
+  .hero__portfolio-image {
+    width: 60%;
+    margin: 0 auto;
+  }
+  .hero__portfolio-img {
+    width: 100%;
+  }
+}

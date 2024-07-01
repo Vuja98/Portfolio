@@ -99,3 +99,16 @@
     background: var(--primary-gradient);
   }
 }
+@media screen and (max-width: 26.5625em) {
+  .footer__wrapper {
+    flex-direction: column;
+    width: 100%;
+    margin: 0 auto;
+    gap: 4rem;
+  }
+
+  .footer__socials {
+    display: flex;
+    width: 60%;
+  }
+}

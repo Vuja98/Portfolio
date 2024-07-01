@@ -41,7 +41,7 @@ html {
   margin: 0 auto;
 }
 section {
-  margin: 8rem 0 8rem 0;
+  margin: 8rem 0;
 }
 a {
   text-decoration: none;
@@ -52,5 +52,15 @@ ul {
 @media screen and (max-width: 90em) {
   .container {
     max-width: 90%;
+  }
+}
+@media screen and (max-width: 48em) {
+  section {
+    margin: 6rem 0;
+  }
+}
+@media screen and (max-width: 26.5625em) {
+  section {
+    margin: 4rem 0;
   }
 }

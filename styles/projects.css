@@ -224,7 +224,7 @@
 }
 @media only screen and (max-width: 50em) {
   .featured-projects {
-    grid-template-columns: repeat(1, 1fr);
+    grid-template-columns: 1fr;
     align-items: center;
   }
 
@@ -277,10 +277,70 @@
   }
 
   .git__projects-wrapper {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(2, 1fr);
     width: 50%;
 
     margin: 0 auto;
+  }
+
+  .git-link {
+    padding: 1rem 2rem;
+  }
+  .live-link {
+    padding: 1rem 2rem;
+  }
+}
+
+@media screen and (max-width: 26.5625em) {
+  .git__projects-wrapper {
+    grid-template-columns: 1fr;
+  }
+  .project__wrapper {
+    perspective: 120rem;
+    -moz-perspective: 120rem;
+    position: relative;
+    height: 40rem;
+    width: 85%;
+    justify-self: center;
+  }
+
+  .card__side {
+    height: 40rem;
+  }
+
+  .card__side-front {
+    height: 40rem;
+    gap: 1rem;
+  }
+  .card-heading {
+    font-size: 4rem;
+    padding: 4rem;
+  }
+
+  .card__details {
+    padding: 2rem;
+
+    gap: 3rem;
+  }
+  .card__title > h4,
+  .card__name {
+    font-size: 3.2em;
+  }
+
+  .card__description {
+    font-size: 2rem;
+  }
+
+  .card__cta {
+    flex-direction: row;
+
+    gap: 1rem;
+  }
+
+  .card__btn {
+    padding: 1rem 2rem;
+
+    font-size: 1.8rem;
   }
 
   .git-link {

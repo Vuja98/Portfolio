@@ -14,7 +14,7 @@
 
 .heading {
   font-size: 4.8rem;
-  margin-bottom: 8rem;
+  margin-bottom: 6rem;
 }
 
 .text {
@@ -75,5 +75,16 @@
   }
   .text {
     font-size: 1.8rem;
+  }
+}
+@media screen and (max-width: 48em) {
+  .heading {
+    font-size: 3.4rem;
+  }
+}
+
+@media screen and (max-width: 26.5625em) {
+  .heading {
+    margin-bottom: 4rem;
   }
 }
