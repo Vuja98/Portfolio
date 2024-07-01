@@ -234,12 +234,17 @@ body {
     right: -100%;
     top: 6rem;
     gap: 0;
+    font-size: 2rem;
     padding: 0;
     flex-direction: column;
     background-color: #fff;
     width: 100%;
     text-align: center;
     transition: transform 0.5s ease-in-out;
+  }
+  .nav__item {
+    padding-bottom: 2rem;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
   }
   .nav__item:not(:first-of-type) {
     margin: 1rem;
@@ -253,6 +258,4 @@ body {
     transform: translateX(-100%);
     top: 6rem;
   }
-}
-@media screen and (max-width: 26.5625em) {
 }
