@@ -51,88 +51,51 @@
   color: var(--primary-text);
   background: var(--primary-gradient);
 }
-@media screen and (max-width: 128em) {
-  .footer__name {
-    font-size: 2rem;
-  }
-}
-@media screen and (max-width: 102.4em) {
-  .footer__name {
-    font-size: 2rem;
+@media only screen and (max-width: 50em) {
+  .footer__list {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    font-size: 1.8rem;
     text-align: center;
-    width: 50%;
   }
-  .footer__nav {
-    width: 50%;
+  .footer__list-item {
+    padding: 1rem 2rem;
+    border-radius: 5px;
+    transition: all 0.3s ease;
   }
-  .footer__socials {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 2rem;
-    width: 33%;
+  .footer__list-item:hover {
+    background-color: #d5d7ff;
   }
-  .footer__social-icon {
-    width: 100%;
-  }
-}
-@media only screen and (max-width: 19em) {
-  .footer {
-    padding: 2rem 0 2rem 0;
-  }
-  .footer__wrapper {
-    flex-direction: column;
-    gap: 4rem;
-  }
-  .footer__name {
-    font-size: 2rem;
-  }
-
-  .footer__list {
-    gap: 2rem;
-  }
-}
-
-@media screen and (max-width: 72em) {
-  .footer {
-    padding: 4rem 0 4rem 0;
-  }
-  .footer__wrapper {
-    display: flex;
-    width: 100%;
-    gap: 5rem;
-    flex-direction: column;
-  }
-  .footer__name {
-    font-size: 2rem;
-  }
-  .footer__nav {
-    width: 100%;
-  }
-  .footer__list {
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
-    font-size: 1.6rem;
-  }
-}
-@media screen and (max-width: 76.8em) {
   .footer__socials {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     justify-content: center;
     align-items: center;
-
-    width: 50%;
+    gap: 2rem;
+    width: 60%;
   }
   .footer__icon-link {
-    justify-self: center;
     align-self: center;
-    width: 50%;
+    justify-self: center;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   .footer__social-icon {
     width: 100%;
-    justify-self: center;
-    align-self: center;
+  }
+  .copyright {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    text-align: center;
+    font-size: 1.2rem;
+    opacity: 0.8;
+    color: var(--primary-text);
+    background: var(--primary-gradient);
   }
 }

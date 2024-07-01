@@ -172,57 +172,34 @@
   transform: translateY(-5px);
   box-shadow: 1px 4px 4px rgba(0, 0, 0, 0.15);
 }
-@media screen and (max-width: 192em) {
-  .git-link {
-    background: var(--secondary-gradient);
-    padding: 1rem 2rem;
-    border-radius: 5rem;
-    font-size: 1.6rem;
-    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.15);
-    transition: all 0.3s ease;
-  }
-  .live-link {
-    background: var(--primary-gradient);
-    color: var(--primary-text);
-    padding: 1rem 2rem;
-    border-radius: 5rem;
-    font-size: 1.6rem;
-    transition: all 0.3s ease;
-    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.15);
-  }
 
-  .git-link:hover,
-  .live-link:hover {
-    transform: translateY(-5px);
-    box-shadow: 1px 4px 4px rgba(0, 0, 0, 0.15);
-  }
-}
-@media screen and (max-width: 157.6em) {
-  .card__side-front {
-    padding: 2rem;
-  }
-
-  .card__btn {
-    padding: 1rem 2rem;
-
-    font-size: 1.8rem;
-  }
-  .git-link {
-    padding: 1rem 2rem;
-  }
-  .live-link {
-    padding: 1rem 2rem;
-  }
-
-  .project-name {
-    font-size: 2.6rem;
-    padding: 2rem;
-  }
-}
-@media screen and (max-width: 144em) {
+@media screen and (max-width: 101.25em) {
   .projects-section {
-    padding-left: 0;
-    padding-right: 0;
+    padding: 8rem 0 8rem 0;
+  }
+}
+@media screen and (max-width: 80em) {
+  .git__projects-wrapper {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    align-items: center;
+    justify-content: center;
+  }
+}
+@media screen and (max-width: 64em) {
+  .featured-projects {
+    gap: 2rem;
+  }
+  .sm-circle-bottom-card {
+    height: 12rem;
+    width: 12rem;
+  }
+  .sm-circle-top-card {
+    height: 12rem;
+    width: 12rem;
   }
   .project__wrapper {
     perspective: 150rem;
@@ -231,71 +208,56 @@
     height: 50rem;
   }
 
-  .card__details {
-    padding: 3rem;
+  .card__description {
+    font-size: 2.4rem;
+    text-align: center;
+  }
 
-    justify-content: space-around;
-    gap: 5rem;
-  }
   .card__cta {
-    gap: 1rem;
+    flex-direction: column;
+    gap: 2rem;
   }
+
   .card__btn {
     padding: 1rem 2rem;
-    border-radius: 5rem;
   }
 }
-@media only screen and (max-width: 19em) {
-  .projects-section {
-    padding: 2rem;
-  }
+@media only screen and (max-width: 50em) {
   .featured-projects {
-    display: grid;
-    gap: 2rem;
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(1, 1fr);
+    align-items: center;
   }
-  .sm-circle-bottom-card {
-    top: 60%;
-    left: 40%;
 
-    height: 10rem;
-    width: 10rem;
-  }
-  .sm-circle-top-card {
-    height: 10rem;
-    width: 10rem;
-  }
   .project__wrapper {
     perspective: 120rem;
     -moz-perspective: 120rem;
     position: relative;
     height: 40rem;
+    width: 50%;
+    justify-self: center;
   }
-  .card-heading {
-    font-size: 4.4rem;
-    padding: 4rem;
-  }
+
   .card__side {
     height: 40rem;
   }
 
   .card__side-front {
     height: 40rem;
-    padding: 2rem;
+    gap: 1rem;
+  }
+  .card-heading {
+    font-size: 4rem;
+    padding: 4rem;
   }
 
-  .card__image,
-  .card__image img {
-    width: 100%;
-  }
   .card__details {
-    padding: 1rem;
+    padding: 2rem;
 
-    gap: 4rem;
+    gap: 3rem;
   }
   .card__title > h4,
   .card__name {
-    font-size: 3em;
+    font-size: 3.2em;
   }
 
   .card__description {
@@ -303,114 +265,22 @@
   }
 
   .card__cta {
-    flex-direction: column;
-  }
+    flex-direction: row;
 
-  .card__btn {
-    padding: 1rem 3rem;
-    border-radius: 5rem;
-    font-size: 1.8rem;
-    transition: all 0.3s ease;
-  }
-
-  .git__projects-wrapper {
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-
-    grid-template-columns: 1fr;
-  }
-  .project {
-    background-color: #fff;
-    display: flex;
-
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 1rem;
-    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.2);
-  }
-
-  .project-name {
-    font-size: 2rem;
-    padding: 3rem;
-  }
-
-  .git-links {
-    flex-direction: column;
-  }
-}
-@media screen and (max-width: 72em) {
-  .projects-section {
-    padding: 4rem;
-  }
-  .featured-projects {
-    grid-template-columns: 1fr 1fr 1fr;
-  }
-
-  .card__title > h4,
-  .card__name {
-    font-size: 3.6em;
-  }
-
-  .card__description {
-    font-size: 2.2rem;
-    text-align: center;
-  }
-
-  .card__btn {
-    padding: 2rem 4rem;
-    border-radius: 5rem;
-    font-size: 1.8rem;
-    transition: all 0.3s ease;
-  }
-
-  .git__projects-wrapper {
-    grid-template-columns: 1fr;
-  }
-
-  .project-name {
-    font-size: 2rem;
-  }
-
-  .git-links {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 2rem;
-  }
-}
-@media only screen and (max-width: 40em) {
-  .projects-section {
-    padding: 2rem;
+    gap: 1rem;
   }
 
   .card__btn {
     padding: 1rem 2rem;
-    border-radius: 5rem;
+
     font-size: 1.8rem;
-    transition: all 0.3s ease;
   }
-}
-@media only screen and (max-width: 56.25em) {
+
   .git__projects-wrapper {
-    padding-top: 2rem;
-    padding-bottom: 2rem;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 1rem;
-    align-items: center;
-    justify-content: center;
-  }
-  .project {
-    padding: 2rem;
-  }
+    grid-template-columns: 1fr;
+    width: 50%;
 
-  .project-name {
-    padding: 3rem;
-  }
-
-  .git-links {
-    gap: 1rem;
+    margin: 0 auto;
   }
 
   .git-link {
@@ -418,29 +288,5 @@
   }
   .live-link {
     padding: 1rem 2rem;
-  }
-}
-@media screen and (max-width: 76.8em) {
-  .projects-section {
-    padding: 2rem;
-  }
-  .featured-projects {
-    grid-template-columns: repeat(3, 1fr);
-  }
-
-  .git__projects-wrapper {
-    grid-template-columns: repeat(3, 1fr);
-  }
-}
-@media screen and (max-width: 42.5em) {
-  .projects-section {
-    padding: 1rem;
-  }
-  .featured-projects {
-    grid-template-columns: repeat(1, 1fr);
-  }
-
-  .git__projects-wrapper {
-    grid-template-columns: repeat(1, 1fr);
   }
 }

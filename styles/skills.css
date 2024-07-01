@@ -32,25 +32,7 @@
 .skills_description {
   font-size: 2.4rem;
 }
-@media screen and (max-width: 192em) {
-  .skills__grid-item {
-    padding: 3rem 3rem;
-  }
-
-  .skills__name {
-    font-size: 3.2rem;
-  }
-  .skills_description {
-    font-size: 2.2rem;
-  }
-}
-@media screen and (max-width: 144em) {
-  .skills-grid {
-    gap: 3rem;
-  }
-  .skills__grid-item {
-    padding: 2rem 2rem;
-  }
+@media screen and (max-width: 80em) {
   .skills__icon {
     display: flex;
     justify-content: center;
@@ -64,53 +46,29 @@
     font-size: 2.2rem;
   }
 }
-@media only screen and (max-width: 19em) {
-  .skills-section {
-    background: var(--primary-text);
-  }
+@media screen and (max-width: 64em) {
   .skills-grid {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 4rem;
+  }
+
+  .skills__name {
+    font-size: 3rem;
+  }
+  .skills_description {
+    font-size: 2rem;
+  }
+}
+@media only screen and (max-width: 50em) {
+  .skills-grid {
+    grid-template-columns: repeat(2, 1fr);
     gap: 2rem;
   }
 
   .skills__name {
-    font-size: 2.8rem;
+    font-size: 2.6rem;
   }
   .skills_description {
     font-size: 1.8rem;
-  }
-}
-@media only screen and (max-width: 72em) {
-  .skills-grid {
-    grid-template-columns: 1fr;
-  }
-}
-@media screen and (max-width: 76.8em) {
-  .skills-grid {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 3rem;
-  }
-  .skills__grid-item {
-    padding: 2rem 2rem;
-  }
-
-  .skills__name {
-    font-size: 3.2rem;
-  }
-  .skills_description {
-    font-size: 2.2rem;
-  }
-}
-@media screen and (max-width: 42.5em) {
-  .skills-grid {
-    grid-template-columns: 1fr;
-    gap: 3rem;
-  }
-
-  .skills__name {
-    font-size: 2.8rem;
-  }
-  .skills_description {
-    font-size: 2rem;
   }
 }

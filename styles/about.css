@@ -1,6 +1,6 @@
 .about-section {
   background: var(--primary-gradient);
-  padding: 8rem;
+  padding: 8rem 6rem;
   z-index: 100;
   overflow: hidden;
   margin-top: 0 !important;
@@ -13,33 +13,8 @@
   flex-direction: column;
   gap: 4rem;
 }
-@media screen and (max-width: 128em) {
+@media screen and (max-width: 64em) {
   .about-section {
-    padding: 8rem 0rem 8rem 0rem;
-  }
-}
-@media only screen and (max-width: 19em) {
-  .about-section {
-    padding: 2rem;
-  }
-  .about__heading {
-    padding: 0;
-  }
-  .about__text {
-    font-size: 1.2rem;
-    width: 100%;
-    text-align: center;
-  }
-  .about__text-wrapper {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    gap: 4rem;
-  }
-}
-@media only screen and (max-width: 40em) {
-  .about__heading {
-    margin-bottom: 2rem;
+    padding: 6rem 4rem;
   }
 }

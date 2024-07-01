@@ -49,8 +49,8 @@ a {
 ul {
   list-style: none;
 }
-@media screen and (max-width: 128em) {
-  section {
-    margin: 6rem 0 6rem 0;
+@media screen and (max-width: 90em) {
+  .container {
+    max-width: 90%;
   }
 }

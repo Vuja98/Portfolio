@@ -19,36 +19,9 @@
 
 .text {
   font-size: 2.4rem;
+  line-height: 1.5;
 }
 
-/* Margins and paddings */
-
-.margin-sm {
-  margin: 2rem;
-}
-.margin-md {
-  margin: 4rem;
-}
-.margin-lg {
-  margin: 6rem;
-}
-
-.padding-sm {
-  padding: 2rem;
-}
-.padding-md {
-  padding: 4rem;
-}
-.padding-lg {
-  padding: 6rem;
-}
-
-.margin-bt {
-  margin-bottom: 4rem;
-}
-.padding-bt {
-  padding-bottom: 4rem;
-}
 /* Animations */
 
 .animate {
@@ -87,14 +60,20 @@
 .bold {
   font-weight: 700;
 }
-@media only screen and (max-width: 19em) {
+@media screen and (max-width: 80em) {
   .heading {
-    font-size: 3rem;
-    margin-bottom: 4rem;
+    font-size: 4.4rem;
+  }
+  .text {
+    font-size: 2.2rem;
   }
 }
-@media only screen and (max-width: 40em) {
+
+@media only screen and (max-width: 50em) {
   .heading {
-    font-size: 3rem;
+    font-size: 3.6rem;
+  }
+  .text {
+    font-size: 1.8rem;
   }
 }

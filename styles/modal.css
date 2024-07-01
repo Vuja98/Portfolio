@@ -7,7 +7,7 @@
   display: none;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+
   transition: all 0.6s ease;
 }
 .modal.active {
@@ -26,17 +26,17 @@
 }
 .modal-overlay.activate {
   display: block;
-  justify-content: center;
-  align-items: center;
+
   opacity: 100;
 }
 .contact-modal {
+  position: fixed;
   border-radius: 5px;
-  top: 10%;
+  top: 30%;
   display: flex;
   align-items: center;
   flex-direction: column;
-  height: 60vh;
+  height: auto;
   width: 40%;
   background-color: #fff;
   margin: 0 auto;
@@ -111,48 +111,12 @@
 .result {
   font-size: 1.6rem;
 }
-@media screen and (max-width: 192em) {
+@media screen and (max-width: 80em) {
   .contact-modal {
-    height: 60%;
     width: 50%;
-  }
-}
-@media screen and (max-width: 144em) {
-  .modal-overlay.activate {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  .contact-modal {
-    position: fixed;
-    top: 20%;
-  }
-
-  .form__input {
-    font-size: 1.8rem;
-  }
-  .form__area {
-    font-size: 1.8rem;
-  }
-  .form__btn {
-    font-size: 1.8rem;
-  }
-}
-@media screen and (max-width: 42.5m) {
-  .contact-modal {
-    width: 80%;
-  }
-
-  .close-icon {
-    width: 3rem;
-    height: 3rem;
   }
 
   .contact-form {
-    padding: 2rem;
-  }
-
-  .result {
-    font-size: 1.6rem;
+    padding: 3rem;
   }
 }
