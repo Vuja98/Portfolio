@@ -159,6 +159,10 @@
   }
 }
 @media only screen and (max-width: 50em) {
+  .circle {
+    height: 27rem;
+    width: 27rem;
+  }
   .hero__content {
     flex-direction: column;
   }
@@ -171,15 +175,10 @@
   }
 
   .hero__right-col {
-    width: 100%;
+    width: 60%;
   }
   .overlay {
     display: none;
-  }
-
-  .circle {
-    height: 45rem;
-    width: 45rem;
   }
 
   .sm-circle-top {
@@ -191,5 +190,13 @@
     height: 15rem;
     width: 15rem;
     top: 10%;
+  }
+
+  .hero__portfolio-image {
+    width: 50%;
+    margin: 0 auto;
+  }
+  .hero__portfolio-img {
+    width: 100%;
   }
 }
