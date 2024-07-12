@@ -300,7 +300,7 @@
     -moz-perspective: 120rem;
     position: relative;
     height: 40rem;
-    width: 85%;
+    width: 100%;
     justify-self: center;
   }
 
