@@ -98,11 +98,7 @@ function removeActive() {
 }
 async function getLatestRepos() {
   try {
-    const response = await fetch(url, {
-      // headers: {
-      //   Authorization: `Bearer ${token}`,
-      // },
-    });
+    const response = await fetch(url);
     const data = await response.json();
 
     const cards = data
@@ -124,11 +120,6 @@ async function getLatestRepos() {
       .join("");
     const wrapper = document.createElement("div");
     wrapper.classList.add("git-wrapper");
-    const title = document.createElement("h3");
-    title.classList.add("tc");
-    title.classList.add("mb-sm");
-    title.classList.add("heading-tertiary");
-    title.innerText = "Latest Projects";
     wrapper.insertAdjacentElement("beforebegin", title);
     gitProfile.innerHTML = cards;
 

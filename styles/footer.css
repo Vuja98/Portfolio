@@ -52,27 +52,9 @@
   background: var(--primary-gradient);
 }
 @media only screen and (max-width: 50em) {
-  .footer__list {
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
-    font-size: 1.8rem;
-    text-align: center;
-  }
-  .footer__list-item {
-    padding: 1rem 2rem;
-    border-radius: 5px;
-    transition: all 0.3s ease;
-  }
-  .footer__list-item:hover {
-    background-color: #d5d7ff;
-  }
   .footer__socials {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    justify-content: center;
-    align-items: center;
-    gap: 2rem;
     width: 60%;
   }
   .footer__icon-link {
