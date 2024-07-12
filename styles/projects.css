@@ -277,7 +277,7 @@
   }
 
   .git__projects-wrapper {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 1fr;
     width: 50%;
 
     margin: 0 auto;
