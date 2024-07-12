@@ -68,18 +68,6 @@
   .footer__social-icon {
     width: 100%;
   }
-  .copyright {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 2rem;
-    text-align: center;
-    font-size: 1.2rem;
-    opacity: 0.8;
-    color: var(--primary-text);
-    background: var(--primary-gradient);
-  }
 }
 @media screen and (max-width: 26.5625em) {
   .footer__wrapper {
