@@ -290,11 +290,7 @@
     padding: 1rem 2rem;
   }
 }
-
-@media screen and (max-width: 26.5625em) {
-  .git__projects-wrapper {
-    grid-template-columns: 1fr;
-  }
+@media only screen and (max-width: 48em) {
   .project__wrapper {
     perspective: 120rem;
     -moz-perspective: 120rem;
@@ -302,6 +298,11 @@
     height: 40rem;
     width: 100%;
     justify-self: center;
+  }
+}
+@media screen and (max-width: 26.5625em) {
+  .git__projects-wrapper {
+    grid-template-columns: 1fr;
   }
 
   .card__side {

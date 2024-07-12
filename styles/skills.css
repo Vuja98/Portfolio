@@ -72,11 +72,12 @@
     font-size: 1.8rem;
   }
 }
-@media screen and (max-width: 26.5625em) {
+@media only screen and (max-width: 48em) {
   .skills-grid {
     grid-template-columns: 1fr;
   }
-
+}
+@media screen and (max-width: 26.5625em) {
   .skills__name {
     font-size: 2.8rem;
   }
