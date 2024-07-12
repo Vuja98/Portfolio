@@ -296,7 +296,7 @@
     -moz-perspective: 120rem;
     position: relative;
     height: 40rem;
-    width: 100%;
+    width: 60%;
     justify-self: center;
   }
 }
