@@ -120,7 +120,7 @@ async function getLatestRepos() {
       .join("");
     const wrapper = document.createElement("div");
     wrapper.classList.add("git-wrapper");
-    wrapper.insertAdjacentElement("beforebegin", title);
+
     gitProfile.innerHTML = cards;
 
     gitProfile.appendChild(wrapper);
